@@ -166,6 +166,7 @@ useEffect(() => {
             descripcion={selected.descripcion}
             logoUrl={selected.logoUrl}
             tecnologias={['React', 'Three.js', 'TypeScript']}
+            url={selected.iframeUrl}
           />
         </div>
         <div id="render" className="col-span-3 row-span-3">
