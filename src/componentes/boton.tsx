@@ -1,5 +1,5 @@
 import React from 'react'
-import './boton.css'
+import './liquid.css'
 
 interface BotonProps {
     logoUrl?: string;

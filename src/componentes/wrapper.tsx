@@ -1,5 +1,5 @@
 import React from 'react'
-import './boton.css'
+import './liquid.css'
 
 interface WrapperProps {
     titulo?: string;
@@ -10,26 +10,26 @@ interface WrapperProps {
 
 const Wrapper: React.FC<WrapperProps> = ({ titulo, descripcion, logoUrl, tecnologias }) => {
   return (
-    <div className="wrapper">
-      <div className="liquidGlass-wrapper menu">
-        <div className="liquidGlass-effect"></div>
-        <div className="liquidGlass-tint"></div>
-        <div className="liquidGlass-shine"></div>
-        <div className="liquidGlass-text">
-         <div>
+    <div id="wrapper-description">
+      <div className="liquidGlass-wrapper menu-wrapper">
+        <div className="liquidGlass-effect-wrapper"></div>
+        <div className="liquidGlass-tint-wrapper"></div>
+        <div className="liquidGlass-shine-wrapper"></div>
+        <div className="liquidGlass-text-wrapper">
+         <span>
           <h1>{titulo}</h1>
           <img src={logoUrl} alt="Logo" style={{ width: '100px', height: '100px' }}/>
-         </div> 
-          <div>{descripcion}</div>
+         </span>
+          <span className='description'>{descripcion}</span>
             {tecnologias && tecnologias.length > 0 && (
-            <div>
+            <span className='technologies'>
                 <strong>Tecnologías:</strong>
                 <ul>
                 {tecnologias.map((tec, index) => (
                     <li key={index}>{tec}</li>
                 ))}
                 </ul>
-            </div>
+            </span>
             )}
         </div>
       </div>
