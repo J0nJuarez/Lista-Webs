@@ -135,7 +135,7 @@ const [loading, setLoading] = useState(true)
 const [error, setError] = useState<string | null>(null)
 
 useEffect(() => {
-  fetch('/data.json')
+  fetch('https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLig27DYuRJMs7Ihimr7zkcB99s_V5cxi7GZbOyxlyzEcfgj-lB1YyzaJv0DEroNNOAJwpxDcX_c7ZYRMWRB4InotIpUBqY2GZ9O6WX9dgMxeMRKvLRF40AtvHVe9ldAokQeH8CJdxqIolc24wu63MIUJ4NJBPvUoIayhAovtNO2NtW4WzCH-k2Bcozm6dOve7lt1PCL0Kmz7MX9yMcL-GuY1M3ob1sTnzh1cp_PPBcIVc8i_phPWKCJeYPph1D0w6FqzLwdptfhUdBt-xoEoOj1k2E8-Q&lib=MxKpmTFjnglxoe1gQtppCpcwMa5svsu61')
     // cambiar por
     .then(res => {
       if (!res.ok) throw new Error('Error al cargar los sitios')
