@@ -81,7 +81,7 @@ const Screen: React.FC<{ url: string; fallbackUrl?: string }> = ({ url, fallback
     iframe.addEventListener('load', onLoadHandler)
 
     // intentar actualizar periódicamente
-    const interval = window.setInterval(updateTexture, 3000)
+   // const interval = window.setInterval(updateTexture, 3000)
 
     // limpieza
     return () => {
@@ -170,7 +170,7 @@ useEffect(() => {
           />
         </div>
         <div id="render" className="col-span-3 row-span-3">
-          <LiquidEther
+         {/* <LiquidEther
             colors={['#5227FF', '#FF9FFC', '#B19EEF']}
             mouseForce={20}
             cursorSize={100}
@@ -186,7 +186,7 @@ useEffect(() => {
             takeoverDuration={0.25}
             autoResumeDelay={3000}
             autoRampDuration={0.6}
-          />
+          /> */}
           <Canvas
             camera={{ position: [1, 1, 2], fov: 50 }}
             resize={{ scroll: true }}
